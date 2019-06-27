@@ -374,7 +374,7 @@ header {
 	width: 321px;
 	height: 458px;
 	margin-right: 65px;
-	/* margin-bottom: 65px; */
+	background-color: #eb6d4a8f;
 }
 
 .main-member-info {
@@ -442,6 +442,7 @@ header {
 	display: block;
 	width: 197px;
 	height: 214px;
+	background-color: #d4dce680;
 }
 
 /* Subscribe */
