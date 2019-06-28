@@ -483,7 +483,11 @@ header {
 	justify-content: center;
 }
 
-.subscribe-form input[type="email"] {
+.subscribe-form > .email-input {
+	color: grey;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
 	box-sizing: border-box;
 	flex: 0 1 521px;
 	max-width: 521px;
@@ -495,7 +499,11 @@ header {
 	margin-right: 22px;
 }
 
-.subscribe-form button[type="submit"] {
+.subscribe-form > .subscribe-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 	color: #fff;
 	font-size: 18px;
 	font-family: 'OpenSans Bold';
@@ -541,7 +549,10 @@ header {
 	flex-wrap: wrap;
 }
 
-.feedback-form > input {
+.feedback-form > div {
+	color: grey;
+	display: flex;
+	align-items: center;
 	box-sizing: border-box;
 	padding-left: 54px;
 	border: none;
@@ -550,18 +561,18 @@ header {
 	margin-bottom: 45px;
 }
 
-.feedback-form > input[name="name"],
-.feedback-form > input[name="email"] {
+.feedback-form > .name-input,
+.feedback-form > .email-input {
 	width: 339px;
 	max-width: 339px;
 	height: 69px;
 }
 
-.feedback-form > input[name="name"] {
+.feedback-form > .name-input {
 	margin-right: 53px;
 }
 
-.feedback-form > textarea[name="message"] {
+.feedback-form > .message-input {
 	resize: none;
 	font-size: 16px;
 	font-family: 'OpenSans Regular';
@@ -578,7 +589,11 @@ header {
 	background-color: #f3f3f3;	
 }
 
-.feedback-form > button[type="submit"] {
+.feedback-form > .send-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 	width: 731px;
 	max-width: 731px;
 	height: 72px;
@@ -729,11 +744,15 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-	.feedback-form > input[name="name"],
-	.feedback-form > input[name="email"],
-	.feedback-form > textarea[name="message"],
-	.feedback-form > button[type="submit"] {
+	.feedback-form > .name-input,
+	.feedback-form > .email-input,
+	.feedback-form > .message-input,
+	.feedback-form > .send-button {
 		width: 100%;
+		max-width: 100%;
+	}
+	.feedback-form > .name-input {
+		margin-right: 0;
 	}
 }
 
