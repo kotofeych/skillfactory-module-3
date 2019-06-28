@@ -147,6 +147,7 @@ header {
 .intro-heading > .style-text {
 	letter-spacing: 6px;
 	word-break: break-word;
+	hyphens: auto;
 	/* Свойство word-break заставляет слова переноситься по буквам, если они не помещаются в родительский элемент.*/
 }
 
