@@ -135,7 +135,8 @@ header {
 .intro-heading {
 	margin: 0;
 	font-size: 60px;
-	line-height: 72px;
+	line-height: 1.2em;
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 18px;
