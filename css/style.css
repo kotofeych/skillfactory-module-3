@@ -609,6 +609,7 @@ header {
 
 /* Contacts */
 .contacts {
+	position: relative;
 	color: #e0e0e0;
 	background-color: #2c2c2c;
 	padding: 125px 78px;
@@ -640,6 +641,19 @@ header {
 	clip-path: polygon(1000px 0, 100% 0, 100% 100%, 1000px 100%);
 	/* Свойство clip-path позволяет наложить на элемент маску, которая может визуально скрыть части этого элемента. Макса может быть самой разной формы, в данном случае это прямоугольник. */
 }
+
+.contacts::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateX(100%);
+	width: 100vw;
+	height: 481px;
+	background-color: #2c2c2c;
+}
+/* Второй способ сделать темную подложку - создать пустой псевдоэлемент, стилизовать его и тоже исопльзовать позиционирование. Этот подход лучше тем, что вам не нужно изменять HTML. Сейчас работает этот способ, поэтому элемент в HTML отключен. */
 
 /* Footer */
 footer {
