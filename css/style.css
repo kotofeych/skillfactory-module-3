@@ -48,6 +48,7 @@ body {
 
 main {
 	overflow: hidden;
+	/* Это свойство скрывает переполнение. В этом макете это нужно, чтобы декоративная подложка в разделе контактов не выходила за край. Вообще-то это не самая лучшая практика, потому что она не решает проблему, а скрывает. В данном случае это ни на что не влияет, но в реальных проектах лучше найти решение проблемы. */
 }
 
 h2 {
@@ -280,8 +281,7 @@ header {
 }
 
 .feature-heading {
-	position: relative;
-    left: 14px;
+	padding-left: 14px;
 	margin-bottom: 16px;
 }
 
@@ -758,7 +758,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 757px) {
 	.feedback-form > .name-input,
 	.feedback-form > .email-input,
 	.feedback-form > .message-input,
