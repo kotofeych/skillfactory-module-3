@@ -758,7 +758,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 760px) {
 	.feedback-form > .name-input,
 	.feedback-form > .email-input,
 	.feedback-form > .message-input,
