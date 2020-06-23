@@ -1,0 +1,124 @@
+@font-face {
+	src: url('../fonts/OpenSans-Regular.ttf');
+	font-family: 'OpenSans Regular';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Italic.ttf');
+	font-family: 'OpenSans Italic';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Bold.ttf');
+	font-family: 'OpenSans Bold';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-SemiBold.ttf');
+	font-family: 'OpenSans SemiBold';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-ExtraBold.ttf');
+	font-family: 'OpenSans ExtraBold';
+}
+
+p {
+	margin: 0;
+	font-family: 'OpenSans Regular';
+	font-size: 16px;
+	line-height: 28px;
+}
+    
+
+/* Include additional files */
+body {
+    /* background-color: rgb(246,242,242); */
+    margin: 0;
+}
+/* Block - header */
+header {
+    max-width: 1254px;
+    min-height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.8);
+}
+/* .header-block {
+    text-align: center;
+    min-width: 1254px;
+    width: 100%;
+    height: 89px;
+    background-color: rgb(0,0,0,0.8);
+} */
+/* .header-block-buttom{
+    display: inline-block;
+    padding:  34px 10px 34px 10px;
+    font-size: 14pt;
+}
+.header-block-buttom > a {
+    color: white;
+    position: relative;
+    padding: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header-block-buttom > a:hover {
+    background-color: rgb(255,63,64);
+} */
+.body-block {
+    margin-top: 110px;;
+    min-width: 1254px;
+    width: 100%;
+}
+.body-block-info {
+    vertical-align: top;
+    display: inline-block;
+    width: 60%;
+}
+.body-head-text {
+    font-size: 60pt;
+    font-family: Georgia;
+}
+.body-description-text {
+    margin-top: 60px;
+    font-size: 12pt;
+    font-family: Georgia;
+}
+.body-block-buttom-text {
+    display: inline-block;
+    color: white;
+    font-size: 18pt;
+    margin: 13px;
+}
+.body-block-buttom {
+    margin-top: 60px;
+    text-align: center;
+    display: inline-block;
+    width: 227px;
+    height: 55px;
+    background-color: rgb(255,45,45);
+}
+img {
+    display: inline-block;
+    width: 551px;
+    height: 356px;
+}
+
+.footer_social {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+
+.footer-wrapper {
+	box-sizing: border-box;
+	padding: 19px 60px 0;
+	color: #e0e0e0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 110px;
+	background-color: #2c2c2c;
+}
