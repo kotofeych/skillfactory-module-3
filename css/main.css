@@ -1,72 +1,69 @@
+/* Section 'FontFace' */
 @font-face {
 	src: url('../fonts/OpenSans-Regular.ttf');
 	font-family: 'OpenSans Regular';
 }
-
 @font-face {
 	src: url('../fonts/OpenSans-Italic.ttf');
 	font-family: 'OpenSans Italic';
 }
-
 @font-face {
 	src: url('../fonts/OpenSans-Bold.ttf');
 	font-family: 'OpenSans Bold';
 }
-
 @font-face {
 	src: url('../fonts/OpenSans-SemiBold.ttf');
 	font-family: 'OpenSans SemiBold';
 }
-
 @font-face {
 	src: url('../fonts/OpenSans-ExtraBold.ttf');
 	font-family: 'OpenSans ExtraBold';
 }
 
-p {
+/* Section HTML  */
+body {
+    font-family: 'OpenSans Regular', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* p {
 	margin: 0;
 	font-family: 'OpenSans Regular';
 	font-size: 16px;
 	line-height: 28px;
-}
-    
+} */
 
-/* Include additional files */
-body {
-    /* background-color: rgb(246,242,242); */
-    margin: 0;
-}
 /* Block - header */
 header {
-    max-width: 1254px;
+    box-sizing: border-box;
+    max-width: 1250px;
     min-height: 89px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(0,0,0,0.8);
+    margin: 1% auto;
 }
-/* .header-block {
+.header-block {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    min-width: 1254px;
-    width: 100%;
-    height: 89px;
-    background-color: rgb(0,0,0,0.8);
-} */
-/* .header-block-buttom{
-    display: inline-block;
-    padding:  34px 10px 34px 10px;
-    font-size: 14pt;
-}
-.header-block-buttom > a {
-    color: white;
     position: relative;
-    padding: inherit;
-    text-transform: uppercase;
-    text-decoration: none;
 }
-.header-block-buttom > a:hover {
-    background-color: rgb(255,63,64);
-} */
+.header-block > a {
+	padding: 39px 30px 30px;
+	color: #e0e0e0;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header-block > a:hover {
+	background-color: #ff3f40;
+}
+
+
+/* 
 .body-block {
     margin-top: 110px;;
     min-width: 1254px;
@@ -105,14 +102,20 @@ img {
     width: 551px;
     height: 356px;
 }
+*/
+
+/* Section Footer */
+.foother {
+    width: 100%;
+}
 
 .footer_social {
     width: 30px;
     height: 30px;
-    background-color: white;
+    /* background-color: rgb(0,0,0,0.8);; */
 }
 
-.footer-wrapper {
+.footer-block {
 	box-sizing: border-box;
 	padding: 19px 60px 0;
 	color: #e0e0e0;
@@ -121,4 +124,8 @@ img {
 	justify-content: space-between;
 	min-height: 110px;
 	background-color: #2c2c2c;
+} 
+
+.footer-block-social {
+    display: flex;
 }
